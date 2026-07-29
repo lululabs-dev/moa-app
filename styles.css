@@ -517,6 +517,33 @@ a {
   gap: 28px;
 }
 
+.business-disclosure {
+  max-width: 760px;
+}
+
+.business-disclosure__details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+  margin-top: 8px;
+}
+
+.business-disclosure__details span {
+  position: relative;
+  font-size: 13px;
+}
+
+.business-disclosure__details span:not(:last-child)::after {
+  position: absolute;
+  right: -8px;
+  color: #aab4b0;
+  content: "·";
+}
+
+.business-disclosure a {
+  color: var(--brand);
+}
+
 .site-footer strong {
   display: block;
   color: var(--ink);
@@ -708,6 +735,15 @@ a {
 
   .site-footer__inner {
     flex-direction: column;
+  }
+
+  .business-disclosure__details {
+    display: grid;
+    gap: 4px;
+  }
+
+  .business-disclosure__details span::after {
+    display: none;
   }
 
   .footer-links {

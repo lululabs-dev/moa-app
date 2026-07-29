@@ -111,6 +111,11 @@ a {
   outline: none;
 }
 
+.site-nav .language-link {
+  margin-left: 6px;
+  color: var(--brand);
+}
+
 .hero {
   min-height: 660px;
   overflow: hidden;
@@ -631,8 +636,12 @@ a {
 
   .site-nav a {
     min-height: 42px;
-    padding: 9px 7px;
+    padding: 9px 6px;
     font-size: 12px;
+  }
+
+  .site-nav .language-link {
+    margin-left: 2px;
   }
 
   .hero__brand {

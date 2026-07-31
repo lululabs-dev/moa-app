@@ -165,7 +165,7 @@ a {
 }
 
 .hero {
-  min-height: 740px;
+  min-height: 720px;
   overflow: hidden;
   color: #ffffff;
   background: var(--brand);
@@ -174,18 +174,20 @@ a {
 .hero__inner {
   position: relative;
   width: min(calc(100% - 40px), var(--page-width));
-  min-height: 740px;
+  min-height: 720px;
   margin: 0 auto;
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 340px);
   align-items: center;
-  padding: 70px 0 56px;
+  gap: 72px;
+  padding: 52px 0 0;
 }
 
 .hero__copy {
   position: relative;
   z-index: 2;
-  width: min(580px, 58%);
-  padding: 40px 0;
+  width: auto;
+  padding: 32px 0 84px;
 }
 
 .hero__brand {
@@ -261,26 +263,25 @@ a {
 }
 
 .hero__visual {
-  position: absolute;
-  right: 8px;
-  bottom: -150px;
-  width: 390px;
-  height: 760px;
-  padding: 14px;
+  position: relative;
+  align-self: end;
+  width: min(100%, 328px);
+  aspect-ratio: 1242 / 2688;
+  justify-self: end;
+  padding: 7px;
   overflow: hidden;
   background: #111917;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 52px;
+  border-radius: 38px 38px 0 0;
   box-shadow: 0 35px 80px rgba(2, 24, 21, 0.42);
-  transform: rotate(3deg);
 }
 
 .hero__visual img {
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: top;
-  border-radius: 39px;
+  border-radius: 30px 30px 0 0;
 }
 
 .section {
@@ -343,18 +344,20 @@ a {
 }
 
 .workflow-step {
+  display: flex;
   min-width: 0;
+  flex-direction: column;
 }
 
 .phone-shot {
   width: min(100%, 286px);
   aspect-ratio: 1242 / 2688;
-  margin: 0 auto 26px;
-  padding: 8px;
+  margin: 28px auto 0;
+  padding: 6px;
   overflow: hidden;
-  background: #101513;
-  border: 1px solid #28322f;
-  border-radius: 36px;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 32px;
   box-shadow: var(--shadow);
 }
 
@@ -363,7 +366,7 @@ a {
   height: 100%;
   object-fit: cover;
   object-position: top;
-  border-radius: 28px;
+  border-radius: 25px;
 }
 
 .workflow-step__number {
@@ -821,11 +824,12 @@ a {
 
   .hero,
   .hero__inner {
-    min-height: 900px;
+    min-height: auto;
   }
 
   .hero__inner {
-    align-items: flex-start;
+    grid-template-columns: 1fr;
+    gap: 26px;
     padding-top: 46px;
   }
 
@@ -845,11 +849,16 @@ a {
   }
 
   .hero__visual {
-    right: 50%;
-    bottom: -360px;
-    width: 310px;
-    height: 600px;
-    transform: translateX(50%) rotate(2deg);
+    width: min(100%, 520px);
+    height: 270px;
+    aspect-ratio: auto;
+    justify-self: center;
+    padding: 6px;
+    border-radius: 24px 24px 0 0;
+  }
+
+  .hero__visual img {
+    border-radius: 18px 18px 0 0;
   }
 
   .section {
@@ -860,7 +869,6 @@ a {
     font-size: 30px;
   }
 
-  .workflow-grid,
   .feature-grid,
   .privacy-principles,
   .plan-grid {
@@ -868,11 +876,22 @@ a {
   }
 
   .workflow-grid {
-    gap: 58px;
+    width: calc(100% + 20px);
+    grid-auto-columns: min(82vw, 340px);
+    grid-template-columns: none;
+    grid-auto-flow: column;
+    gap: 24px;
+    overflow-x: auto;
+    padding: 0 20px 24px 0;
+    scroll-padding-inline: 0 20px;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
   }
 
   .workflow-step {
-    max-width: 520px;
+    width: 100%;
+    max-width: none;
+    scroll-snap-align: start;
   }
 
   .feature {
@@ -988,14 +1007,17 @@ a {
   }
 
   .hero__visual {
-    bottom: -300px;
-    width: 270px;
-    height: 530px;
-    border-radius: 42px;
+    width: calc(100% + 28px);
+    height: 230px;
+    margin-right: -14px;
+    margin-left: -14px;
+    border-right: 0;
+    border-left: 0;
+    border-radius: 0;
   }
 
   .hero__visual img {
-    border-radius: 31px;
+    border-radius: 0;
   }
 
   .section h2 {
@@ -1007,7 +1029,9 @@ a {
   }
 
   .workflow-grid {
+    width: calc(100% + 14px);
     margin-top: 42px;
+    padding-right: 14px;
   }
 
   .workflow-step h3 {

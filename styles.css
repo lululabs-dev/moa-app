@@ -240,11 +240,12 @@ a {
   width: min(100%, 300px);
   aspect-ratio: auto;
   justify-self: end;
-  padding: 8px;
+  --mockup-canvas: #ffffff;
+  padding: 26px 0 0;
   overflow: hidden;
-  background: var(--device);
-  border: 1px solid rgba(255, 255, 255, 0.24);
-  border-radius: 48px;
+  background: var(--mockup-canvas);
+  border: 7px solid var(--device);
+  border-radius: 42px;
   box-shadow: 0 32px 72px rgba(2, 24, 21, 0.38);
 }
 
@@ -252,7 +253,7 @@ a {
   width: 100%;
   height: auto;
   object-position: top;
-  border-radius: 40px;
+  border-radius: 0 0 28px 28px;
 }
 
 .section {
@@ -324,12 +325,13 @@ a {
 .phone-shot {
   width: min(100%, 284px);
   aspect-ratio: auto;
-  margin: 32px auto 0;
-  padding: 7px;
+  margin: 48px auto 24px;
+  --mockup-canvas: #ffffff;
+  padding: 26px 0 0;
   overflow: hidden;
-  background: var(--device);
-  border: 1px solid #cfd8d4;
-  border-radius: 40px;
+  background: var(--mockup-canvas);
+  border: 7px solid var(--device);
+  border-radius: 38px;
   box-shadow: var(--shadow);
 }
 
@@ -337,7 +339,11 @@ a {
   width: 100%;
   height: auto;
   object-position: top;
-  border-radius: 33px;
+  border-radius: 0 0 26px 26px;
+}
+
+.phone-shot--dimmed {
+  --mockup-canvas: #919594;
 }
 
 .workflow-step__number {
@@ -815,17 +821,17 @@ a {
   }
 
   .hero__visual {
-    width: min(48vw, 200px);
+    width: min(72vw, 292px);
     height: auto;
     aspect-ratio: auto;
     justify-self: center;
     margin-bottom: 46px;
-    padding: 7px;
-    border-radius: 44px;
+    padding: 26px 0 0;
+    border-radius: 38px;
   }
 
   .hero__visual img {
-    border-radius: 37px;
+    border-radius: 0 0 26px 26px;
   }
 
   .section {
@@ -843,27 +849,22 @@ a {
   }
 
   .workflow-grid {
-    width: calc(100% + 20px);
-    grid-auto-columns: min(82vw, 340px);
-    grid-template-columns: none;
-    grid-auto-flow: column;
-    gap: 24px;
-    overflow-x: auto;
-    padding: 0 20px 24px 0;
-    scroll-padding-inline: 0 20px;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: thin;
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 76px;
+    overflow: visible;
+    padding: 0;
   }
 
   .workflow-step {
+    display: block;
     width: 100%;
     max-width: none;
-    grid-template-rows: 30px 72px 104px auto;
-    scroll-snap-align: start;
   }
 
   .phone-shot {
-    width: min(52vw, 205px);
+    width: min(76vw, 300px);
+    margin-top: 34px;
   }
 
   .feature {
@@ -975,18 +976,18 @@ a {
   }
 
   .hero__visual {
-    width: min(46vw, 180px);
+    width: min(76vw, 292px);
     margin-right: auto;
     margin-left: auto;
-    border-radius: 40px;
+    border-radius: 36px;
   }
 
   .hero__visual img {
-    border-radius: 33px;
+    border-radius: 0 0 24px 24px;
   }
 
   .phone-shot {
-    width: min(50vw, 195px);
+    width: min(78vw, 300px);
   }
 
   .section h2 {
@@ -998,9 +999,7 @@ a {
   }
 
   .workflow-grid {
-    width: calc(100% + 14px);
     margin-top: 42px;
-    padding-right: 14px;
   }
 
   .workflow-step h3 {

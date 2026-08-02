@@ -344,7 +344,7 @@ a {
 }
 
 .phone-shot--dimmed {
-  --mockup-canvas: #919594;
+  --mockup-canvas: #9b9e9d;
 }
 
 .workflow-step__number {
@@ -988,7 +988,8 @@ a {
   }
 
   .phone-shot {
-    width: min(78vw, 300px);
+    width: min(64vw, 248px);
+    margin-top: 28px;
   }
 
   .section h2 {

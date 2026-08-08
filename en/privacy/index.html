@@ -46,7 +46,7 @@
 
       <article class="document">
         <div class="document__meta">
-          Published August 4, 2026 · Effective August 11, 2026 · Operator: LuluLabs Inc.
+          Published August 9, 2026 · Effective August 11, 2026 · Operator: LuluLabs Inc.
         </div>
 
         <p>
@@ -59,8 +59,9 @@
         <ul>
           <li>Links, images, notes, and organized results are saved on your device first.</li>
           <li>
-            If you enable iCloud sync, data syncs to the private iCloud database for
-            your Apple Account. LuluLabs cannot view that database.
+            If you enable cloud sync, data syncs to the private iCloud database for
+            your Apple Account on iOS or MOA's private app storage in your Google Drive
+            on Android. LuluLabs cannot view either storage location.
           </li>
           <li>
             When you run AI organization, required content is sent to our processing
@@ -71,7 +72,7 @@
         </ul>
 
         <h2>2. Information we process</h2>
-        <h3>Information stored on your device or in your iCloud</h3>
+        <h3>Information stored on your device or in your selected personal cloud</h3>
         <ul>
           <li>Saved link addresses and text retrieved from those links</li>
           <li>Images and screenshots you select</li>
@@ -97,12 +98,17 @@
             A one-way hashed IP value, date, and request count used to enforce AI
             request limits. The original IP address is not stored in the application database.
           </li>
+          <li>
+            A one-way hashed app-user identifier, usage month, link and image organization
+            counts, and a request hash and processing time used to prevent duplicate claims.
+            Original app-user and request identifiers are not stored.
+          </li>
         </ul>
 
         <h2>3. How we use information</h2>
         <ul>
           <li>Generate titles, summaries, and classifications for links and images</li>
-          <li>Provide scrap storage, search, editing, backup, and iCloud sync</li>
+          <li>Provide scrap storage, search, editing, backup, and selected personal cloud sync</li>
           <li>Verify free usage limits and Premium subscription status</li>
           <li>Prevent abnormal high-volume requests and maintain service reliability</li>
           <li>Respond to support requests</li>
@@ -119,14 +125,25 @@
             iCloud. You can delete that copy with “Delete iCloud Data” in the app.
           </li>
           <li>
+            <strong>Google Drive:</strong> If sync is enabled on Android, data remains
+            in MOA's private app storage in your Google Drive. You can delete that copy
+            with the cloud-data deletion control in the app.
+          </li>
+          <li>
             <strong>AI processing content:</strong> Our relay function does not store
             source scrap content in the LuluLabs database after processing. OpenAI API
             inputs and outputs are not used for model training by default. OpenAI may
             retain abuse-monitoring records for up to 30 days under its policies.
           </li>
           <li>
-            <strong>Rate-limit records:</strong> Hashed values, dates, and counts may be
+            <strong>IP rate-limit records:</strong> Hashed IP values, dates, and counts may be
             retained for up to 30 days for abuse prevention and are then deleted.
+          </li>
+          <li>
+            <strong>Free-usage records:</strong> The hashed app-user identifier and monthly
+            link and image organization counts are retained only for the current month and
+            the previous two months. Duplicate-request hashes and processing times are retained
+            for 35 days. Expired records are deleted automatically each day.
           </li>
           <li>
             <strong>Subscription records:</strong> Apple and RevenueCat process these
@@ -138,7 +155,7 @@
         <p>
           We use the following processors and transfer information only as needed to
           perform our contract with you. Information is transmitted over encrypted
-          networks when you choose to use AI organization, iCloud sync, or subscription features.
+          networks when you choose to use AI organization, personal cloud sync, or subscription features.
         </p>
         <table>
           <thead>
@@ -157,12 +174,17 @@
             <tr>
               <td>Supabase, Inc.<br /><a href="https://supabase.com/privacy">Privacy contact</a></td>
               <td>Seoul, Republic of Korea region (provider headquartered in the United States) · When AI organization is requested · Encrypted network transfer</td>
-              <td>Relay AI requests and enforce request limits · Source scraps are not stored; hashed rate-limit records for 30 days</td>
+              <td>Relay AI requests and enforce usage limits · Source scraps are not stored; IP rate-limit records for 30 days, duplicate-request records for 35 days, and monthly usage records for the current and previous two months</td>
             </tr>
             <tr>
               <td>Apple Inc.<br /><a href="https://www.apple.com/legal/privacy/contact/">Privacy contact</a></td>
               <td>Countries determined by your Apple Account settings and Apple data location · When sync or payment is used · Encrypted network transfer</td>
               <td>Private iCloud sync, in-app purchases, and subscription management · Retention under Apple Account settings and policies</td>
+            </tr>
+            <tr>
+              <td>Google LLC<br /><a href="https://policies.google.com/privacy">Privacy contact</a></td>
+              <td>Countries determined by your Google Account settings and Google's data locations · When Google Drive sync is used on Android · Encrypted network transfer from the device</td>
+              <td>Sync and backup in private Google Drive app storage · Until you delete it in the app or your Google Account; Google access tokens are not stored on LuluLabs servers</td>
             </tr>
             <tr>
               <td>RevenueCat, Inc.<br /><a href="https://www.revenuecat.com/privacy/">Privacy contact</a></td>
@@ -174,7 +196,7 @@
         <p>
           You may decline an international transfer by not using the related optional
           feature. If you do not want content transferred for AI organization, do not
-          use AI organization. If you do not want iCloud or subscription processing,
+          use AI organization. If you do not want personal cloud or subscription processing,
           do not enable sync or purchase a subscription. You can continue to view,
           search, and edit scraps on your device and use manual backups.
         </p>
@@ -190,6 +212,7 @@
         <ul>
           <li>View, edit, and delete scraps and notes in the app.</li>
           <li>Turn off iCloud sync or delete MOA data stored in iCloud.</li>
+          <li>On Android, turn off Google Drive sync or delete MOA data stored in its private app storage.</li>
           <li>Export or restore a manual backup from Settings.</li>
           <li>Change photo access in iOS Settings.</li>
           <li>Manage or cancel subscriptions in Apple Account subscription settings.</li>
@@ -213,7 +236,7 @@
         <p>
           We delete information without undue delay when its retention period ends or
           the processing purpose is complete. Electronic files are deleted using
-          methods designed to prevent recovery. You can delete scraps and iCloud data
+          methods designed to prevent recovery. You can delete scraps and personal cloud data
           using the controls provided in the app.
         </p>
 
@@ -231,7 +254,7 @@
           of the change on this page or in the app. We will provide notice before
           applying a material change that affects user rights.
         </p>
-        <p><strong>Change history:</strong> August 4, 2026 — clarified processors, transfers, privacy rights, and automatic collection.</p>
+        <p><strong>Change history:</strong> August 9, 2026 — clarified minimal usage records and retention periods and added Android personal cloud sync.</p>
 
         <section class="contact-panel">
           <h2>12. Privacy contact and requests</h2>

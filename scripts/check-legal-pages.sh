@@ -26,22 +26,22 @@ require_text privacy/index.html "중복 요청 기록 35일"
 require_text privacy/index.html "현재 월과 직전 2개 월"
 require_text privacy/index.html "2026년 8월 9일"
 require_text terms/index.html "민감하거나 고위험한 개인정보"
-require_text terms/index.html "월 200건까지"
-require_text index.html "AI 정리를 월 200건까지"
+require_text terms/index.html "월 100건까지"
+require_text index.html "AI 정리를 월 100건까지"
 
 require_text en/privacy/index.html "duplicate-request records for 35 days"
 require_text en/privacy/index.html "current and previous two months"
 require_text en/privacy/index.html "August 9, 2026"
 require_text en/terms/index.html "sensitive or high-risk personal information"
-require_text en/terms/index.html "up to 200 AI"
-require_text en/index.html "Up to 200 AI organizations each month"
+require_text en/terms/index.html "up to 100 AI"
+require_text en/index.html "Up to 100 AI organizations each month"
 
 require_text ja/privacy/index.html "重複リクエスト記録は35日"
 require_text ja/privacy/index.html "当月と直前2か月"
 require_text ja/privacy/index.html "2026年8月9日"
 require_text ja/terms/index.html "機微または高リスクな個人情報"
-require_text ja/terms/index.html "月200件まで"
-require_text ja/index.html "AI整理を月200件まで"
+require_text ja/terms/index.html "月100件まで"
+require_text ja/index.html "AI整理を月100件まで"
 
 if grep -Fq -- "AI 정리를 제한 없이" "$repo_root/index.html" \
   || grep -Fiq -- "unlimited AI organization" "$repo_root/en/index.html" \

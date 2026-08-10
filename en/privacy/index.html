@@ -103,6 +103,19 @@
             counts, and a request hash and processing time used to prevent duplicate claims.
             Original app-user and request identifiers are not stored.
           </li>
+          <li>
+            A one-way hashed random install identifier and minimal product events used to
+            check app quality (app opened, first save, third save, first detail view, search
+            attempted and succeeded, resurfacing shown and opened, and the number of trimmed
+            pending shares), plus platform, language, and record date. Link addresses, titles,
+            body text, memos, search queries, images, and the original install identifier are
+            not collected.
+          </li>
+          <li>
+            Request type (link or image), image count, model name, token counts, and
+            processing time used to measure AI processing cost. These records contain no
+            identifiers and no scrap content.
+          </li>
         </ul>
 
         <h2>3. How we use information</h2>
@@ -111,6 +124,8 @@
           <li>Provide scrap storage, search, editing, backup, and selected personal cloud sync</li>
           <li>Verify free usage limits and Premium subscription status</li>
           <li>Prevent abnormal high-volume requests and maintain service reliability</li>
+          <li>Check whether the first save, search, and resurfacing flows work, and improve app quality</li>
+          <li>Measure AI processing cost and plan service operations</li>
           <li>Respond to support requests</li>
         </ul>
 
@@ -146,6 +161,15 @@
             for 35 days. Expired records are deleted automatically each day.
           </li>
           <li>
+            <strong>App quality records:</strong> The hashed random install identifier and
+            minimal product events are kept for 90 days, after which the server deletes them
+            automatically each day.
+          </li>
+          <li>
+            <strong>AI cost records:</strong> Token usage records, which identify no one, are
+            kept for 180 days and then deleted.
+          </li>
+          <li>
             <strong>Subscription records:</strong> Apple and RevenueCat process these
             records for the period needed to provide subscriptions and meet legal obligations.
           </li>
@@ -173,8 +197,8 @@
             </tr>
             <tr>
               <td>Supabase, Inc.<br /><a href="https://supabase.com/privacy">Privacy contact</a></td>
-              <td>Seoul, Republic of Korea region (provider headquartered in the United States) · When AI organization is requested · Encrypted network transfer</td>
-              <td>Relay AI requests and enforce usage limits · Source scraps are not stored; IP rate-limit records for 30 days, duplicate-request records for 35 days, and monthly usage records for the current and previous two months</td>
+              <td>Seoul, Republic of Korea region (provider headquartered in the United States) · When AI organization is requested or a minimal product event occurs · Encrypted network transfer</td>
+              <td>Relay AI requests, enforce usage limits, and check app quality and cost · Source scraps are not stored; IP rate-limit records for 30 days, duplicate-request records for 35 days, monthly usage records for the current and previous two months, minimal product events for 90 days, and cost records for 180 days</td>
             </tr>
             <tr>
               <td>Apple Inc.<br /><a href="https://www.apple.com/legal/privacy/contact/">Privacy contact</a></td>
@@ -254,7 +278,7 @@
           of the change on this page or in the app. We will provide notice before
           applying a material change that affects user rights.
         </p>
-        <p><strong>Change history:</strong> August 9, 2026 — clarified minimal usage records and retention periods and added Android personal cloud sync.</p>
+        <p><strong>Change history:</strong> August 11, 2026 — added minimal product events for app quality and AI cost records, including their purpose and retention periods.<br />August 9, 2026 — clarified minimal usage records and retention periods and added Android personal cloud sync.</p>
 
         <section class="contact-panel">
           <h2>12. Privacy contact and requests</h2>

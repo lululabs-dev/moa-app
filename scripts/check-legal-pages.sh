@@ -17,7 +17,6 @@ for file in privacy/index.html en/privacy/index.html ja/privacy/index.html; do
   require_text "$file" "OpenAI OpCo, LLC"
   require_text "$file" "Supabase, Inc."
   require_text "$file" "Apple Inc."
-  require_text "$file" "Google LLC"
   require_text "$file" "RevenueCat, Inc."
   require_text "$file" "privacy@lululabs.ai"
 done

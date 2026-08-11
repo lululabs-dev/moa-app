@@ -4,9 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#252b2a" />
+    <meta name="robots" content="noindex" />
     <title>페이지를 찾을 수 없습니다 - 모아(MOA)</title>
-    <link rel="icon" href="assets/moa-app-icon.png" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="/moa-app/assets/moa-app-icon.png" />
+    <link rel="stylesheet" href="/moa-app/styles.css?v=20260812a" />
   </head>
   <body>
     <main>
@@ -14,9 +15,15 @@
         <div class="page-hero__inner">
           <p>404</p>
           <h1>페이지를 찾을 수 없습니다.</h1>
-          <div class="page-hero__lede">주소를 확인하거나 모아 소개 페이지로 돌아가주세요.</div>
+          <div class="page-hero__lede">
+            주소를 확인하거나 아래에서 언어를 선택해 모아 소개 페이지로 이동해주세요.<br />
+            <span lang="en">The page you requested was not found.</span>
+            <span lang="ja">お探しのページは見つかりませんでした。</span>
+          </div>
           <div class="link-row">
-            <a class="text-link" href="./">모아 홈으로</a>
+            <a class="text-link" href="/moa-app/">한국어 홈</a>
+            <a class="text-link" href="/moa-app/en/" lang="en">English</a>
+            <a class="text-link" href="/moa-app/ja/" lang="ja">日本語</a>
           </div>
         </div>
       </section>

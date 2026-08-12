@@ -44,7 +44,7 @@ require_text en/privacy/index.html "current and previous two months"
 require_text en/privacy/index.html "August 9, 2026"
 require_text en/terms/index.html "sensitive or high-risk personal information"
 require_text en/terms/index.html "up to 100 AI"
-require_text en/index.html "Up to 100 AI organizations each month"
+require_text en/index.html "Up to 100 saves organized by AI each month"
 
 require_text ja/privacy/index.html "重複リクエスト記録は35日"
 require_text ja/privacy/index.html "当月と直前2か月"

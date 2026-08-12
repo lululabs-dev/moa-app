@@ -36,11 +36,41 @@ body {
   line-height: 1.65;
   letter-spacing: 0;
   word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
-[lang="en"] body,
+/* 영문은 공백에서 끊기므로 어절 유지 규칙이 필요 없다. */
+[lang="en"] body {
+  word-break: normal;
+}
+
+/* 일본어는 공백이 없어 어절 유지 규칙이 듣지 않는다.
+   대신 금칙 처리(행두에 と·。·」 등이 오지 않게)를 엄격 모드로 둔다. */
 [lang="ja"] body {
   word-break: normal;
+  line-break: strict;
+}
+
+/* 제목은 줄 길이를 고르게, 본문은 마지막 줄에 한 단어만 남지 않게. */
+h1,
+h2,
+h3,
+h4,
+.eyebrow,
+.hero__lede,
+.page-hero__lede,
+.section__lede,
+blockquote {
+  text-wrap: balance;
+}
+
+p,
+li,
+dd,
+figcaption,
+.note,
+.fine-print {
+  text-wrap: pretty;
 }
 
 a {
@@ -93,33 +123,97 @@ a {
   border-radius: 8px;
 }
 
-.site-nav {
+.site-header__actions {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 10px;
 }
 
-.site-nav a {
-  min-height: 44px;
-  padding: 10px 12px;
-  border-radius: 6px;
+/* 언어 전환: 현재 언어를 라벨로 보여주고 눌러서 연다.
+   나란한 EN/JA 링크는 지금 어느 언어인지 알려주지 못했다. */
+.lang-switch {
+  position: relative;
+}
+
+.lang-switch summary {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 42px;
+  padding: 9px 13px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--paper);
   color: var(--muted);
   font-size: 14px;
   font-weight: 650;
-  text-decoration: none;
+  cursor: pointer;
+  list-style: none;
 }
 
-.site-nav a:hover,
-.site-nav a:focus-visible,
-.site-nav a[aria-current="page"] {
-  color: var(--accent-text);
-  background: var(--accent-soft);
+.lang-switch summary::-webkit-details-marker {
+  display: none;
+}
+
+.lang-switch summary svg {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 16px;
+}
+
+.lang-switch summary::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-right: 1.6px solid currentColor;
+  border-bottom: 1.6px solid currentColor;
+  transform: translateY(-2px) rotate(45deg);
+}
+
+.lang-switch summary:hover,
+.lang-switch summary:focus-visible,
+.lang-switch[open] summary {
+  border-color: var(--accent-text);
+  color: var(--ink);
   outline: none;
 }
 
-.site-nav .language-link {
-  margin-left: 6px;
+.lang-switch__menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  z-index: 20;
+  min-width: 168px;
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  box-shadow: 0 16px 34px rgba(30, 36, 35, 0.14);
+}
+
+.lang-switch__menu a {
+  display: block;
+  min-height: 42px;
+  padding: 11px 12px;
+  border-radius: 8px;
+  color: var(--muted);
+  font-size: 14.5px;
+  text-decoration: none;
+}
+
+.lang-switch__menu a:hover,
+.lang-switch__menu a:focus-visible {
+  background: var(--accent-soft);
+  color: var(--ink);
+  outline: none;
+}
+
+.lang-switch__menu a[aria-current] {
+  background: var(--accent-soft);
   color: var(--accent-text);
+  font-weight: 700;
 }
 
 .button {
@@ -135,6 +229,12 @@ a {
   line-height: 1.4;
   text-align: center;
   text-decoration: none;
+}
+
+.button--compact {
+  min-height: 42px;
+  padding: 10px 16px;
+  font-size: 14px;
 }
 
 .button[aria-disabled="true"] {
@@ -751,9 +851,8 @@ a {
     min-height: 62px;
   }
 
-  .site-nav a {
-    padding: 9px 8px;
-    font-size: 13px;
+  .lang-switch summary {
+    padding: 9px 11px;
   }
 
   .hero,
@@ -850,7 +949,6 @@ a {
 @media (max-width: 560px) {
   body {
     font-size: 15px;
-    word-break: normal;
   }
 
   .site-header__inner,
@@ -870,22 +968,18 @@ a {
     display: none;
   }
 
-  .site-nav {
-    gap: 0;
-  }
-
-  .site-nav__optional {
+  /* 좁은 화면에서는 지구본만 남기고 다운로드 버튼을 지킨다. */
+  .lang-switch summary span {
     display: none;
   }
 
-  .site-nav a {
-    min-height: 42px;
-    padding: 9px 5px;
-    font-size: 12px;
+  .lang-switch summary {
+    padding: 9px 10px;
   }
 
-  .site-nav .language-link {
-    margin-left: 2px;
+  .button--compact {
+    padding: 10px 13px;
+    font-size: 13px;
   }
 
   .hero__brand {

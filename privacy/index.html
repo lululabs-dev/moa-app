@@ -20,9 +20,13 @@
     <meta property="og:title" content="개인정보 처리방침 - 모아(MOA)" />
     <meta property="og:description" content="개인정보 처리방침 - 모아(MOA)" />
     <meta property="og:url" content="https://lululabs-dev.github.io/moa-app/privacy/" />
-    <meta name="twitter:card" content="summary" />
+    <meta property="og:image" content="https://lululabs-dev.github.io/moa-app/assets/moa-og-ko.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="개인정보 처리방침 - 모아(MOA)" />
     <meta name="twitter:description" content="개인정보 처리방침 - 모아(MOA)" />
+    <meta name="twitter:image" content="https://lululabs-dev.github.io/moa-app/assets/moa-og-ko.png" />
     <link rel="icon" href="../assets/moa-app-icon.png" />
     <link rel="stylesheet" href="../styles.css?v=20260812a" />
   </head>
@@ -34,14 +38,17 @@
           <img src="../assets/moa-app-icon.png" alt="" />
           <span>모아</span>
         </a>
-        <nav class="site-nav" aria-label="주요 메뉴">
-          <a href="../">소개</a>
-          <a href="../support/">지원</a>
-          <a href="./" aria-current="page">개인정보</a>
-          <a href="../terms/">이용약관</a>
-          <a class="language-link" href="../en/privacy/" lang="en" aria-label="English (EN)">EN</a>
-          <a class="language-link" href="../ja/privacy/" lang="ja" aria-label="日本語 (JA)">JA</a>
-        </nav>
+        <div class="site-header__actions">
+          <details class="lang-switch">
+            <summary aria-label="언어 선택, 현재 한국어"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 2.5 15.3 0 18M12 3c-2.5 2.7-2.5 15.3 0 18"/></svg><span>한국어</span></summary>
+            <ul class="lang-switch__menu">
+            <li><a href="../" lang="ko" hreflang="ko" aria-current="true">한국어</a></li>
+            <li><a href="../en/privacy/" lang="en" hreflang="en">English</a></li>
+            <li><a href="../ja/privacy/" lang="ja" hreflang="ja">日本語</a></li>
+            </ul>
+          </details>
+          <a class="button button--brand button--compact" href="https://apps.apple.com/app/id6789358514">App Store에서 받기</a>
+        </div>
       </div>
     </header>
 
@@ -58,7 +65,7 @@
 
       <article class="document">
         <div class="document__meta">
-          공고일: 2026년 8월 9일 · 시행일: 2026년 8월 11일 · 개인정보처리자: 루루랩스 주식회사
+          공고일: 2026년 8월 9일 · 시행일: 2026년 8월 12일 · 개인정보처리자: 루루랩스 주식회사
         </div>
 
         <p>
@@ -72,7 +79,9 @@
           <li>링크, 이미지, 메모와 정리 결과는 먼저 이용자의 기기에 저장됩니다.</li>
           <li>
             이용자가 클라우드 동기화를 켠 경우, 데이터는 이용자 Apple 계정의 비공개
-            iCloud 데이터베이스에 동기화됩니다. 회사는 해당 저장공간을 열람하지 않습니다.
+            iCloud 데이터베이스에 동기화됩니다. 출시 예정인 Android 버전에서는 이용자
+            Google Drive의 비공개 앱 전용 공간에 동기화됩니다. 두 경우 모두 회사는 해당
+            저장공간을 열람하지 않습니다.
           </li>
           <li>
             AI 정리를 실행할 때 필요한 콘텐츠가 처리 서버와 AI 처리업체로 전송되지만,
@@ -155,7 +164,7 @@
           </li>
           <li>
             <strong>IP 요청 제한 기록:</strong> 해시 처리된 IP 값, 날짜와 횟수는 부정 이용
-            방지를 위해 30일 동안 보관하며, 30일이 지난 기록은 삭제합니다.
+            방지를 위해 최대 30일 보관하며, 그 뒤에는 삭제합니다.
           </li>
           <li>
             <strong>무료 사용량 기록:</strong> 해시 처리된 앱 사용자 식별자와 월별
@@ -273,7 +282,12 @@
           이 방침이 변경되는 경우 시행일과 변경 내용을 이 페이지 또는 앱에서
           안내합니다. 이용자 권리에 중대한 변경이 있는 경우 적용 전에 별도로 안내합니다.
         </p>
-        <p><strong>변경 이력:</strong> 2026년 8월 12일 — 제공하지 않는 Android·Google Drive 동기화 서술과 종료된 다시 보기 기능의 이벤트 항목 삭제<br />2026년 8월 11일 — 앱 품질 확인용 최소 이용 이벤트와 AI 원가 기록의 항목·목적·보유기간 추가<br />2026년 8월 9일 — 최소 사용량 기록의 항목·보유기간과 Android 개인 클라우드 동기화 설명 보완</p>
+        <p><strong>변경 이력</strong></p>
+        <ul>
+          <li>2026년 8월 12일 — 출시 예정인 Android 개인 클라우드(Google Drive) 동기화를 예정 표시와 함께 명확히 하고, 종료된 다시 보기 기능의 이벤트 항목 삭제</li>
+          <li>2026년 8월 11일 — 앱 품질 확인용 최소 이용 이벤트와 AI 원가 기록의 항목·목적·보유기간 추가</li>
+          <li>2026년 8월 9일 — 최소 사용량 기록의 항목·보유기간 보완</li>
+        </ul>
 
         <section class="contact-panel">
           <h2>12. 개인정보 문의 및 권리 행사</h2>
@@ -303,7 +317,7 @@
           <div class="business-disclosure__details">
             <span>대표자 현내진</span>
             <span>사업자등록번호 571-87-03951</span>
-            <span>통신판매업 신고번호 2026-서울강남-04300</span>
+            <span>통신판매업 신고번호 2026-서울강남-04300 <a href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=5718703951" target="_blank" rel="noopener">사업자정보확인</a></span>
             <span>호스팅서비스 제공자 GitHub, Inc.</span>
           </div>
           <p>서울특별시 강남구 강남대로112길 47, 2층 제J801호(논현동)</p>

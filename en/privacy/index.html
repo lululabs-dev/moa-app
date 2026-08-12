@@ -20,9 +20,13 @@
     <meta property="og:title" content="Privacy Policy - MOA" />
     <meta property="og:description" content="Privacy Policy - MOA" />
     <meta property="og:url" content="https://lululabs-dev.github.io/moa-app/en/privacy/" />
-    <meta name="twitter:card" content="summary" />
+    <meta property="og:image" content="https://lululabs-dev.github.io/moa-app/assets/moa-og-en.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Privacy Policy - MOA" />
     <meta name="twitter:description" content="Privacy Policy - MOA" />
+    <meta name="twitter:image" content="https://lululabs-dev.github.io/moa-app/assets/moa-og-en.png" />
     <link rel="icon" href="../../assets/moa-app-icon.png" />
     <link rel="stylesheet" href="../../styles.css?v=20260812a" />
   </head>
@@ -34,14 +38,17 @@
           <img src="../../assets/moa-app-icon.png" alt="" />
           <span>MOA</span>
         </a>
-        <nav class="site-nav" aria-label="Primary navigation">
-          <a href="../">About</a>
-          <a href="../support/">Support</a>
-          <a href="./" aria-current="page">Privacy</a>
-          <a href="../terms/">Terms</a>
-          <a class="language-link" href="../../privacy/" lang="ko" aria-label="한국어 (KO)">KO</a>
-          <a class="language-link" href="../../ja/privacy/" lang="ja" aria-label="View in Japanese">JA</a>
-        </nav>
+        <div class="site-header__actions">
+          <details class="lang-switch">
+            <summary aria-label="Choose language, currently English"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 2.5 15.3 0 18M12 3c-2.5 2.7-2.5 15.3 0 18"/></svg><span>English</span></summary>
+            <ul class="lang-switch__menu">
+            <li><a href="../../privacy/" lang="ko" hreflang="ko">한국어</a></li>
+            <li><a href="../" lang="en" hreflang="en" aria-current="true">English</a></li>
+            <li><a href="../../ja/privacy/" lang="ja" hreflang="ja">日本語</a></li>
+            </ul>
+          </details>
+          <a class="button button--brand button--compact" href="https://apps.apple.com/app/id6789358514">Get it on the App Store</a>
+        </div>
       </div>
     </header>
 
@@ -58,7 +65,7 @@
 
       <article class="document">
         <div class="document__meta">
-          Published August 9, 2026 · Effective August 11, 2026 · Operator: LuluLabs Inc.
+          Published August 9, 2026 · Effective August 12, 2026 · Operator: LuluLabs Inc.
         </div>
 
         <p>
@@ -72,7 +79,9 @@
           <li>Links, images, notes, and organized results are saved on your device first.</li>
           <li>
             If you enable cloud sync, data syncs to the private iCloud database for
-            your Apple Account. LuluLabs cannot view that storage location.
+            your Apple Account. On the upcoming Android version, data syncs to MOA's private
+            app storage in your own Google Drive. LuluLabs does not access either
+            storage location.
           </li>
           <li>
             When you run AI organization, required content is sent to our processing
@@ -278,7 +287,12 @@
           of the change on this page or in the app. We will provide notice before
           applying a material change that affects user rights.
         </p>
-        <p><strong>Change history:</strong> August 12, 2026 — removed descriptions of Android and Google Drive sync, which the app does not provide, and the event items for the discontinued resurfacing feature.<br />August 11, 2026 — added minimal product events for app quality and AI cost records, including their purpose and retention periods.<br />August 9, 2026 — clarified minimal usage records and retention periods and added Android personal cloud sync.</p>
+        <p><strong>Change history</strong></p>
+        <ul>
+          <li>August 12, 2026 — clarified that Android personal cloud sync (Google Drive) is upcoming, and removed the event items for the discontinued resurfacing feature.</li>
+          <li>August 11, 2026 — added minimal product events for app quality and AI cost records, including their purpose and retention periods.</li>
+          <li>August 9, 2026 — clarified minimal usage records and their retention periods.</li>
+        </ul>
 
         <section class="contact-panel">
           <h2>12. Privacy contact and requests</h2>
@@ -291,6 +305,12 @@
             Contact us to request access, correction, deletion, suspension of
             processing, or withdrawal of consent. We respond under applicable law.
           </p>
+          <p>
+            If you are not satisfied with our response, you may also contact the Korean
+            <a href="https://www.privacy.go.kr/">Privacy Portal</a>,
+            the <a href="https://privacy.kisa.or.kr/">Privacy Infringement Report Center</a>, or the
+            <a href="https://www.kopico.go.kr/">Personal Information Dispute Mediation Committee</a>.
+          </p>
         </section>
       </article>
     </main>
@@ -302,7 +322,7 @@
           <div class="business-disclosure__details">
             <span>Representative: Nae Jin Hyeon</span>
             <span>Business Registration No. 571-87-03951</span>
-            <span>Mail-order business registration 2026-Seoul Gangnam-04300</span>
+            <span>Mail-order business registration 2026-Seoul Gangnam-04300 <a href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=5718703951" target="_blank" rel="noopener">Verify business registration</a></span>
             <span>Hosting provider: GitHub, Inc.</span>
           </div>
           <p>F2, J801, 47 Gangnam-daero 112-gil, Gangnam-gu, Seoul 06121, Republic of Korea</p>

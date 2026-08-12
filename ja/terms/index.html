@@ -20,9 +20,13 @@
     <meta property="og:title" content="利用規約 - モア（MOA）" />
     <meta property="og:description" content="利用規約 - モア（MOA）" />
     <meta property="og:url" content="https://lululabs-dev.github.io/moa-app/ja/terms/" />
-    <meta name="twitter:card" content="summary" />
+    <meta property="og:image" content="https://lululabs-dev.github.io/moa-app/assets/moa-og-ja.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="利用規約 - モア（MOA）" />
     <meta name="twitter:description" content="利用規約 - モア（MOA）" />
+    <meta name="twitter:image" content="https://lululabs-dev.github.io/moa-app/assets/moa-og-ja.png" />
     <link rel="icon" href="../../assets/moa-app-icon.png" />
     <link rel="stylesheet" href="../../styles.css?v=20260812a" />
   </head>
@@ -34,14 +38,17 @@
           <img src="../../assets/moa-app-icon.png" alt="" />
           <span>モア</span>
         </a>
-        <nav class="site-nav" aria-label="メインメニュー">
-          <a href="../">紹介</a>
-          <a href="../support/">サポート</a>
-          <a href="../privacy/">プライバシー</a>
-          <a href="./" aria-current="page">利用規約</a>
-          <a class="language-link" href="../../terms/" lang="ko" aria-label="한국어 (KO)">KO</a>
-          <a class="language-link" href="../../en/terms/" lang="en" aria-label="English (EN)">EN</a>
-        </nav>
+        <div class="site-header__actions">
+          <details class="lang-switch">
+            <summary aria-label="言語を選択、現在は日本語"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 2.5 15.3 0 18M12 3c-2.5 2.7-2.5 15.3 0 18"/></svg><span>日本語</span></summary>
+            <ul class="lang-switch__menu">
+            <li><a href="../../terms/" lang="ko" hreflang="ko">한국어</a></li>
+            <li><a href="../../en/terms/" lang="en" hreflang="en">English</a></li>
+            <li><a href="../" lang="ja" hreflang="ja" aria-current="true">日本語</a></li>
+            </ul>
+          </details>
+          <a class="button button--brand button--compact" href="https://apps.apple.com/app/id6789358514">App Storeで入手</a>
+        </div>
       </div>
     </header>
 
@@ -58,7 +65,7 @@
 
       <article class="document">
         <div class="document__meta">
-          公開日: 2026年8月9日 · 施行日: 2026年8月11日 · 運営者: LuluLabs Inc.
+          公開日: 2026年8月9日 · 施行日: 2026年8月12日 · 運営者: LuluLabs Inc.
         </div>
 
         <h2>第1条 目的</h2>
@@ -88,7 +95,11 @@
         <h2>第4条 ユーザーデータ</h2>
         <ol>
           <li>スクラップはまず利用者の端末に保存され、当社サーバーに原文を保存しません。</li>
-          <li>クラウド同期を有効にすると、iOSでは非公開iCloudデータベースに、AndroidではGoogle Drive内のMOA専用非公開領域に同期されます。</li>
+          <li>
+            クラウド同期を有効にすると、スクラップはご自身のApple Accountの非公開iCloud
+            データベースに同期されます。リリース予定のAndroid版では、ご自身のGoogle Drive内の
+            MOA専用非公開領域に同期されます。
+          </li>
           <li>
             個人クラウド同期を利用せずにアプリを削除した場合、または端末を初期化した場合、
             データが失われることがあります。必要に応じて手動バックアップを書き出せます。
@@ -196,16 +207,17 @@
 
         <h2>第14条 特定商取引法に基づく表記</h2>
         <table>
+          <caption class="sr-only">特定商取引法に基づく表記</caption>
           <tbody>
-            <tr><th scope="col">販売事業者</th><td>LuluLabs Inc.（ルルラボ株式会社）</td></tr>
-            <tr><th scope="col">代表者</th><td>Nae Jin Hyeon</td></tr>
-            <tr><th scope="col">所在地</th><td>F2, J801, 47 Gangnam-daero 112-gil, Gangnam-gu, Seoul 06121, Republic of Korea</td></tr>
-            <tr><th scope="col">連絡先</th><td><a href="tel:+827080644177">+82 70-8064-4177</a> · <a href="mailto:support@lululabs.ai">support@lululabs.ai</a></td></tr>
-            <tr><th scope="col">販売価格</th><td>App Storeの購入画面に表示される税込価格</td></tr>
-            <tr><th scope="col">商品代金以外の費用</th><td>インターネット接続に必要な通信料金</td></tr>
-            <tr><th scope="col">支払時期・方法</th><td>購入確定時にApple Accountへ請求。支払方法はAppleが定める方法</td></tr>
-            <tr><th scope="col">提供時期</th><td>購入完了後、直ちにプレミアム機能を利用可能</td></tr>
-            <tr><th scope="col">解約・返金</th><td>Apple Account設定から解約。返金はAppleの手続および適用法令に従う</td></tr>
+            <tr><th scope="row">販売事業者</th><td>LuluLabs Inc.（ルルラボ株式会社）</td></tr>
+            <tr><th scope="row">代表者</th><td>Nae Jin Hyeon</td></tr>
+            <tr><th scope="row">所在地</th><td>F2, J801, 47 Gangnam-daero 112-gil, Gangnam-gu, Seoul 06121, Republic of Korea</td></tr>
+            <tr><th scope="row">連絡先</th><td><a href="tel:+827080644177">+82 70-8064-4177</a> · <a href="mailto:support@lululabs.ai">support@lululabs.ai</a></td></tr>
+            <tr><th scope="row">販売価格</th><td>App Storeの購入画面に表示される税込価格</td></tr>
+            <tr><th scope="row">商品代金以外の費用</th><td>インターネット接続に必要な通信料金</td></tr>
+            <tr><th scope="row">支払時期・方法</th><td>購入確定時にApple Accountへ請求。支払方法はAppleが定める方法</td></tr>
+            <tr><th scope="row">提供時期</th><td>購入完了後、直ちにプレミアム機能を利用可能</td></tr>
+            <tr><th scope="row">解約・返金</th><td>Apple Account設定から解約。返金はAppleの手続および適用法令に従う</td></tr>
           </tbody>
         </table>
 
@@ -229,7 +241,7 @@
           <div class="business-disclosure__details">
             <span>代表者: Nae Jin Hyeon</span>
             <span>韓国事業者登録番号: 571-87-03951</span>
-            <span>通信販売業届出番号：2026-Seoul Gangnam-04300</span>
+            <span>通信販売業届出番号：2026-Seoul Gangnam-04300 <a href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=5718703951" target="_blank" rel="noopener">事業者情報の確認</a></span>
             <span>ホスティングサービス提供者: GitHub, Inc.</span>
           </div>
           <p>F2, J801, 47 Gangnam-daero 112-gil, Gangnam-gu, Seoul 06121, Republic of Korea</p>

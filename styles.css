@@ -933,12 +933,38 @@ html[lang="ja"] .home li {
 
 /* 흩어진 링크 더미 아래 붙는 안내줄. 결과 카드 쪽 .afterhint 와 짝이지만
    규칙을 따로 둔다 — 한쪽 여백을 바꿨을 때 다른 쪽이 같이 움직이지 않게. */
+/* ── 전후 그림 안의 작은 글자 위계 ──────────────────────────────
+   문제: 네 개가 전부 12.5px · rgb(141,151,147) · 대비 2.87:1 이었다.
+   기준(4.5:1) 미달이라 읽히지 않고, 네 개가 하는 일이 다른데도 무게가 같아
+   무엇이 요점인지 구별되지 않았다.
+   해법: 대비를 기준 위로 올리고 역할대로 3단을 만든다.
+     라벨(어디인가) < 문제 문구(그래서 안 열게 된다) < 결과 문구(이게 생긴다) */
+
+/* 1단 — 구간 라벨. 가장 조용하지만 읽히기는 해야 한다. */
+.home .ba__cap {
+  font-size: 12px;
+  font-weight: 750;
+  letter-spacing: .04em;
+  color: var(--ink-2);
+}
+
+/* 2단 — 링크 더미가 왜 문제인지. 본문으로 읽히는 무게. */
 .home .beforehint {
-  margin-top: 14px;
-  font-size: 12.5px;
+  margin-top: 16px;
+  font-size: 13.5px;
+  font-weight: 500;
   line-height: 1.65;
-  color: var(--ink-3);
+  color: var(--ink-2);
   text-align: center;
+}
+
+/* 3단 — 담으면 무엇이 생기는지. 이 그림의 요점이라 가장 진하게.
+   카드 안 .chk 가 이미 강조색+굵게라, 여기서 강조색을 또 쓰면 두 줄이 붙어 경쟁한다. */
+.home .after--hero ~ .afterhint {
+  margin-top: 16px;
+  font-size: 14px;
+  font-weight: 750;
+  color: var(--ink);
 }
 
 /* ── 히어로 전후 대비 ──────────────────────────────────────────────

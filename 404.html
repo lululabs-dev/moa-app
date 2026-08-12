@@ -34,6 +34,25 @@
     <link rel="stylesheet" href="/moa-app/styles.css?v=20260812a" />
   </head>
   <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand-link" href="/moa-app/" aria-label="모아 홈">
+          <img src="/moa-app/assets/moa-app-icon.png" alt="" />
+          <span>모아</span>
+        </a>
+        <div class="site-header__actions">
+          <details class="lang-switch">
+            <summary aria-label="언어 선택, 현재 한국어"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 2.5 15.3 0 18M12 3c-2.5 2.7-2.5 15.3 0 18"/></svg><span>한국어</span></summary>
+            <ul class="lang-switch__menu">
+            <li><a href="/moa-app/" lang="ko" hreflang="ko" aria-current="true">한국어</a></li>
+            <li><a href="/moa-app/en/" lang="en" hreflang="en">English</a></li>
+            <li><a href="/moa-app/ja/" lang="ja" hreflang="ja">日本語</a></li>
+            </ul>
+          </details>
+          <a class="button button--brand button--compact" href="https://apps.apple.com/app/id6789358514">App Store에서 받기</a>
+        </div>
+      </div>
+    </header>
     <main>
       <section class="page-hero">
         <div class="page-hero__inner">

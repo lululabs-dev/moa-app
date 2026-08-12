@@ -38,14 +38,17 @@
           <img src="../../assets/moa-app-icon.png" alt="" />
           <span>MOA</span>
         </a>
-        <nav class="site-nav" aria-label="Primary navigation">
-          <a href="../">About</a>
-          <a href="../support/">Support</a>
-          <a href="./" aria-current="page">Privacy</a>
-          <a href="../terms/">Terms</a>
-          <a class="language-link" href="../../privacy/" lang="ko" aria-label="한국어 (KO)">KO</a>
-          <a class="language-link" href="../../ja/privacy/" lang="ja" aria-label="日本語 (JA)">JA</a>
-        </nav>
+        <div class="site-header__actions">
+          <details class="lang-switch">
+            <summary aria-label="Choose language, currently English"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 2.5 15.3 0 18M12 3c-2.5 2.7-2.5 15.3 0 18"/></svg><span>English</span></summary>
+            <ul class="lang-switch__menu">
+            <li><a href="../../privacy/" lang="ko" hreflang="ko">한국어</a></li>
+            <li><a href="../" lang="en" hreflang="en" aria-current="true">English</a></li>
+            <li><a href="../../ja/privacy/" lang="ja" hreflang="ja">日本語</a></li>
+            </ul>
+          </details>
+          <a class="button button--brand button--compact" href="https://apps.apple.com/app/id6789358514">Get it on the App Store</a>
+        </div>
       </div>
     </header>
 
@@ -319,7 +322,7 @@
           <div class="business-disclosure__details">
             <span>Representative: Nae Jin Hyeon</span>
             <span>Business Registration No. 571-87-03951</span>
-            <span>Mail-order business registration 2026-Seoul Gangnam-04300</span>
+            <span>Mail-order business registration 2026-Seoul Gangnam-04300 <a href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=5718703951" target="_blank" rel="noopener">Verify business registration</a></span>
             <span>Hosting provider: GitHub, Inc.</span>
           </div>
           <p>F2, J801, 47 Gangnam-daero 112-gil, Gangnam-gu, Seoul 06121, Republic of Korea</p>

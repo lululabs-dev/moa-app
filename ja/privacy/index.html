@@ -38,14 +38,17 @@
           <img src="../../assets/moa-app-icon.png" alt="" />
           <span>モア</span>
         </a>
-        <nav class="site-nav" aria-label="メインメニュー">
-          <a href="../">紹介</a>
-          <a href="../support/">サポート</a>
-          <a href="./" aria-current="page">プライバシー</a>
-          <a href="../terms/">利用規約</a>
-          <a class="language-link" href="../../privacy/" lang="ko" aria-label="한국어 (KO)">KO</a>
-          <a class="language-link" href="../../en/privacy/" lang="en" aria-label="English (EN)">EN</a>
-        </nav>
+        <div class="site-header__actions">
+          <details class="lang-switch">
+            <summary aria-label="言語を選択、現在は日本語"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 2.5 15.3 0 18M12 3c-2.5 2.7-2.5 15.3 0 18"/></svg><span>日本語</span></summary>
+            <ul class="lang-switch__menu">
+            <li><a href="../../privacy/" lang="ko" hreflang="ko">한국어</a></li>
+            <li><a href="../../en/privacy/" lang="en" hreflang="en">English</a></li>
+            <li><a href="../" lang="ja" hreflang="ja" aria-current="true">日本語</a></li>
+            </ul>
+          </details>
+          <a class="button button--brand button--compact" href="https://apps.apple.com/app/id6789358514">App Storeで入手</a>
+        </div>
       </div>
     </header>
 
@@ -312,7 +315,7 @@
           <div class="business-disclosure__details">
             <span>代表者: Nae Jin Hyeon</span>
             <span>韓国事業者登録番号: 571-87-03951</span>
-            <span>通信販売業届出番号：2026-Seoul Gangnam-04300</span>
+            <span>通信販売業届出番号：2026-Seoul Gangnam-04300 <a href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=5718703951" target="_blank" rel="noopener">事業者情報の確認</a></span>
             <span>ホスティングサービス提供者: GitHub, Inc.</span>
           </div>
           <p>F2, J801, 47 Gangnam-daero 112-gil, Gangnam-gu, Seoul 06121, Republic of Korea</p>

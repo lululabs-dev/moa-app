@@ -55,18 +55,21 @@
     <a class="skip-link" href="#main">本文へスキップ</a>
     <header class="site-header">
       <div class="site-header__inner">
-        <a class="brand-link" href="./" aria-label="モア（MOA） ホーム">
+        <a class="brand-link" href="./" aria-label="モア ホーム">
           <img src="../assets/moa-app-icon.png" alt="" />
           <span>モア</span>
         </a>
-        <nav class="site-nav" aria-label="メインメニュー">
-          <a href="#how">機能</a>
-          <a class="site-nav__optional" href="#privacy">データ</a>
-          <a class="site-nav__optional" href="#plans">料金</a>
-          <a href="#faq">FAQ</a>
-          <a class="language-link" href="../" lang="ko" aria-label="한국어 (KO)">KO</a>
-          <a class="language-link" href="../en/" lang="en" aria-label="English (EN)">EN</a>
-        </nav>
+        <div class="site-header__actions">
+          <details class="lang-switch">
+            <summary aria-label="言語を選択、現在は日本語"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 2.5 15.3 0 18M12 3c-2.5 2.7-2.5 15.3 0 18"/></svg><span>日本語</span></summary>
+            <ul class="lang-switch__menu">
+            <li><a href="../" lang="ko" hreflang="ko">한국어</a></li>
+            <li><a href="../en/" lang="en" hreflang="en">English</a></li>
+            <li><a href="./" lang="ja" hreflang="ja" aria-current="true">日本語</a></li>
+            </ul>
+          </details>
+          <a class="button button--brand button--compact" href="https://apps.apple.com/app/id6789358514">App Storeで入手</a>
+        </div>
       </div>
     </header>
 
@@ -266,7 +269,7 @@
           <div class="business-disclosure__details">
             <span>代表者：ヒョン・ネジン</span>
             <span>事業者登録番号：571-87-03951</span>
-            <span>通信販売業届出番号：2026-Seoul Gangnam-04300</span>
+            <span>通信販売業届出番号：2026-Seoul Gangnam-04300 <a href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=5718703951" target="_blank" rel="noopener">事業者情報の確認</a></span>
             <span>ホスティング提供者：GitHub, Inc.</span>
           </div>
           <p>大韓民国 ソウル特別市 江南区 江南大路112ギル47 2階 J801号</p>

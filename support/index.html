@@ -38,14 +38,17 @@
           <img src="../assets/moa-app-icon.png" alt="" />
           <span>모아</span>
         </a>
-        <nav class="site-nav" aria-label="주요 메뉴">
-          <a href="../">소개</a>
-          <a href="./" aria-current="page">지원</a>
-          <a href="../privacy/">개인정보</a>
-          <a href="../terms/">이용약관</a>
-          <a class="language-link" href="../en/support/" lang="en" aria-label="English (EN)">EN</a>
-          <a class="language-link" href="../ja/support/" lang="ja" aria-label="日本語 (JA)">JA</a>
-        </nav>
+        <div class="site-header__actions">
+          <details class="lang-switch">
+            <summary aria-label="언어 선택, 현재 한국어"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 2.5 15.3 0 18M12 3c-2.5 2.7-2.5 15.3 0 18"/></svg><span>한국어</span></summary>
+            <ul class="lang-switch__menu">
+            <li><a href="../" lang="ko" hreflang="ko" aria-current="true">한국어</a></li>
+            <li><a href="../en/support/" lang="en" hreflang="en">English</a></li>
+            <li><a href="../ja/support/" lang="ja" hreflang="ja">日本語</a></li>
+            </ul>
+          </details>
+          <a class="button button--brand button--compact" href="https://apps.apple.com/app/id6789358514">App Store에서 받기</a>
+        </div>
       </div>
     </header>
 
@@ -154,7 +157,7 @@
           <div class="business-disclosure__details">
             <span>대표자 현내진</span>
             <span>사업자등록번호 571-87-03951</span>
-            <span>통신판매업 신고번호 2026-서울강남-04300</span>
+            <span>통신판매업 신고번호 2026-서울강남-04300 <a href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=5718703951" target="_blank" rel="noopener">사업자정보확인</a></span>
             <span>호스팅서비스 제공자 GitHub, Inc.</span>
           </div>
           <p>서울특별시 강남구 강남대로112길 47, 2층 제J801호(논현동)</p>

@@ -76,9 +76,13 @@ a {
   text-underline-offset: 3px;
 }
 
+/* 모든 목업 img 는 레이아웃 안정용으로 width/height 속성을 달고 있다.
+   height:auto 가 없으면 그 속성값(1387px)이 그대로 적용돼 세로로 늘어난다.
+   옛 홈 규칙(.hero__visual img / .phone-shot img)이 갖고 있던 것을 여기로 올린다. */
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 button,
@@ -830,4 +834,11 @@ html[lang="en"] .home h2, html[lang="en"] .home .final h2 {font-size:27px}}
     max-width: 260px;
     margin-inline: auto;
   }
+}
+
+/* 목업은 프레임 안을 꽉 채우고 비율은 원본을 따른다. */
+.home .shot .frame img,
+.home .frame img {
+  width: 100%;
+  height: auto;
 }

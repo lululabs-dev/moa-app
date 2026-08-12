@@ -36,11 +36,41 @@ body {
   line-height: 1.65;
   letter-spacing: 0;
   word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
-[lang="en"] body,
+/* 영문은 공백에서 끊기므로 어절 유지 규칙이 필요 없다. */
+[lang="en"] body {
+  word-break: normal;
+}
+
+/* 일본어는 공백이 없어 어절 유지 규칙이 듣지 않는다.
+   대신 금칙 처리(행두에 と·。·」 등이 오지 않게)를 엄격 모드로 둔다. */
 [lang="ja"] body {
   word-break: normal;
+  line-break: strict;
+}
+
+/* 제목은 줄 길이를 고르게, 본문은 마지막 줄에 한 단어만 남지 않게. */
+h1,
+h2,
+h3,
+h4,
+.eyebrow,
+.hero__lede,
+.page-hero__lede,
+.section__lede,
+blockquote {
+  text-wrap: balance;
+}
+
+p,
+li,
+dd,
+figcaption,
+.note,
+.fine-print {
+  text-wrap: pretty;
 }
 
 a {
@@ -850,7 +880,6 @@ a {
 @media (max-width: 560px) {
   body {
     font-size: 15px;
-    word-break: normal;
   }
 
   .site-header__inner,

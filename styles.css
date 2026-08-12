@@ -921,3 +921,12 @@ html[lang="ja"] .home .final h2 {
     gap: 14px;
   }
 }
+
+/* 일본어는 공백이 없어 브라우저가 낱말 중간에서도 끊는다(「タイト／ル」).
+   auto-phrase 는 문절 단위로 끊어 준다 — 지원하지 않는 브라우저는 아래 이음 문자로 받는다. */
+html[lang="ja"] .home .lede,
+html[lang="ja"] .home .lede--accent,
+html[lang="ja"] .home p,
+html[lang="ja"] .home li {
+  word-break: auto-phrase;
+}

@@ -3,11 +3,22 @@ set -euo pipefail
 
 repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 
+# 화면에 읽히는 문구가 있는지를 본다. 조판용 붙임 공백은 보이는 글자가 아니므로
+# 비교 전에 보통 공백으로 맞춘다 — 문자로 쓰든 &nbsp; 로 쓰든 같게 본다.
+# 이렇게 안 하면 "월 100건"이 갈리지 않게 묶은 것만으로 문구가 사라진 것처럼 잡힌다.
 require_text() {
   local file="$1"
   local text="$2"
 
-  if ! grep -Fq -- "$text" "$repo_root/$file"; then
+  if ! python3 -c '
+import sys
+path, needle = sys.argv[1], sys.argv[2]
+def norm(s):
+    for a in ("&nbsp;", "&#160;", "\u00a0"):
+        s = s.replace(a, " ")
+    return s.replace("\u2011", "-")
+sys.exit(0 if norm(needle) in norm(open(path, encoding="utf-8").read()) else 1)
+' "$repo_root/$file" "$text"; then
     printf 'Missing required legal copy in %s: %s\n' "$file" "$text" >&2
     exit 1
   fi

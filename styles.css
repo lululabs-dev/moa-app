@@ -714,7 +714,7 @@ a {
 .home .searchbar .q {font-weight:700;color:var(--ink)}
 
 /* 실제 화면 */
-.home .shots {display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:52px}
+.home .shots {display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:52px}
 .home .shot {text-align:center}
 .home .shot .frame {border-radius:26px;padding:7px;background:linear-gradient(150deg,#3d4643,#171b1a);
   box-shadow:0 24px 50px rgba(30,36,35,.22)}

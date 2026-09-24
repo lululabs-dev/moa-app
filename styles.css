@@ -714,7 +714,14 @@ a {
 .home .searchbar .q {font-weight:700;color:var(--ink)}
 
 /* 실제 화면 */
-.home .shots {display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:52px}
+.home .shots {display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:auto auto auto auto;gap:24px;margin-top:52px}
+/* 번호·제목·설명·프레임 네 줄을 칸끼리 맞춘다. 설명 길이가 달라도 프레임이 같은 높이에서 시작한다. */
+.home .shot {display:grid;grid-row:span 4;grid-template-rows:subgrid;row-gap:0;align-content:start}
+@supports not (grid-template-rows: subgrid) {
+  .home .shots {grid-template-rows:none}
+  .home .shot {display:flex;flex-direction:column;grid-row:auto}
+  .home .shot .frame {margin-top:auto}
+}
 .home .shot {text-align:center}
 .home .shot .frame {border-radius:26px;padding:7px;background:linear-gradient(150deg,#3d4643,#171b1a);
   box-shadow:0 24px 50px rgba(30,36,35,.22)}
@@ -774,6 +781,8 @@ a {
 .home .final h2 {font-size:30px}
 .home .lede {font-size:17px}
 .home .hero__grid, .home .grid3, .home .shots, .home .plans, .home .cases {grid-template-columns:1fr;gap:34px}
+  .home .shots {grid-template-rows:none}
+  .home .shot {display:block;grid-row:auto}
 }
 
 /* 언어별 줄바꿈 기준

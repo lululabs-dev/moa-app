@@ -194,7 +194,7 @@ a {
   background: var(--paper);
   border: 1px solid var(--line);
   border-radius: 12px;
-  box-shadow: 0 16px 34px rgba(30, 36, 35, 0.14);
+  box-shadow: 0 16px 34px rgba(29, 35, 42, 0.14);
 }
 
 .lang-switch__menu a {
@@ -655,13 +655,13 @@ a {
 .home .hero__grid {display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:center}
 .home .cta {display:inline-flex;align-items:center;gap:9px;margin-top:32px;padding:16px 28px;border-radius:15px;
   background:var(--brand);color:#fff;font-size:16.5px;font-weight:700;text-decoration:none;
-  box-shadow:0 12px 26px rgba(30,36,35,.22)}
+  box-shadow:0 12px 26px rgba(29,35,42,.22)}
 .home .req {margin-top:13px;font-size:13px;color:var(--ink-3)}
 .home .raw__u {font-size:12.5px;color:var(--ink-3);word-break:break-all;line-height:1.5}
 .home .raw__u {overflow-wrap:anywhere}
 .home .raw__n {margin-top:7px;font-size:12px;color:#b3bbb8}
 .home .after {background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:20px;
-  box-shadow:0 20px 44px rgba(30,36,35,.1)}
+  box-shadow:0 20px 44px rgba(29,35,42,.1)}
 .home .tags {display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
 .home .tag {font-size:11.5px;font-weight:700;padding:4px 9px;border-radius:7px;background:var(--accent-soft);color:var(--accent-2)}
 .home .after h4 {font-size:17px;font-weight:800;margin-bottom:8px;letter-spacing:-.01em}
@@ -675,16 +675,35 @@ a {
 
 /* 결과 카드(첫 화면) — 실제 앱 카드 형태 */
 .home .after--hero {position:relative;padding:22px;border-radius:20px;
-  box-shadow:0 26px 60px rgba(63,82,181,.16), 0 2px 6px rgba(30,36,35,.05)}
+  box-shadow:0 26px 60px rgba(63,82,181,.16), 0 2px 6px rgba(29,35,42,.05)}
 .home .after--hero::before {content:"";position:absolute;inset:-14px;z-index:-1;border-radius:30px;
   background:radial-gradient(60% 70% at 50% 40%, rgba(95,122,229,.16), transparent 72%)}
 .home .after__row {display:flex;gap:14px;align-items:flex-start}
+/* 첫 화면 카드: 앱과 같은 순간을 보여준다 — '정리하고 있어요' 상태에서 썸네일 자리에 종이가 쌓이고,
+   다 쌓이면 완성된 카드가 드러난다. 한 바퀴 7.2초. 앱 아이콘(B)이 이 장면의 마지막 모양이다. */
+.home .after--hero .proc{position:absolute;inset:0;z-index:1;padding:22px;border-radius:20px;background:#fff;
+  animation:moaProc 7.2s ease-in-out infinite}
+.home .after--hero .proc .after__meta{margin-bottom:9px}
+.home .after--hero .proc h4{color:var(--ink-2);font-weight:700}
+.home .after--hero .proc p{color:var(--ink-3)}
+.home .thumb.thumb--proc{background:#f2f6f9;display:grid;place-items:center;padding:0}
+.home .thumb.thumb--proc .pile{position:relative;width:62%;aspect-ratio:1/.62}
+.home .thumb.thumb--proc .ps{position:absolute;left:50%;border-radius:18%/28%}
+.home .thumb.thumb--proc .ps1{width:86%;height:48%;top:0;background:#bcd6e9;opacity:.38;transform:translate(-50%,0) rotate(-5deg);animation:moaP1 7.2s cubic-bezier(.2,.85,.3,1) infinite}
+.home .thumb.thumb--proc .ps2{width:92%;height:50%;top:22%;background:#9fc2de;opacity:.62;transform:translate(-50%,0) rotate(2deg);animation:moaP2 7.2s cubic-bezier(.2,.85,.3,1) infinite}
+.home .thumb.thumb--proc .ps3{width:100%;height:56%;top:44%;background:linear-gradient(180deg,#8db6d8,#5f8fbd);transform:translate(-50%,0);animation:moaP3 7.2s cubic-bezier(.2,.85,.3,1) infinite}
+@keyframes moaProc{0%,44%{opacity:1}52%,92%{opacity:0}98%,100%{opacity:1}}
+@keyframes moaP1{0%{transform:translate(-50%,-70%) rotate(-14deg);opacity:0}14%,90%{transform:translate(-50%,0) rotate(-5deg);opacity:.38}100%{transform:translate(-50%,-70%) rotate(-14deg);opacity:0}}
+@keyframes moaP2{0%,5%{transform:translate(-50%,-70%) rotate(8deg);opacity:0}19%,90%{transform:translate(-50%,0) rotate(2deg);opacity:.62}100%{transform:translate(-50%,-70%) rotate(8deg);opacity:0}}
+@keyframes moaP3{0%,10%{transform:translate(-50%,-70%);opacity:0}24%,90%{transform:translate(-50%,0);opacity:1}100%{transform:translate(-50%,-70%);opacity:0}}
+@media (prefers-reduced-motion: reduce){ .home .after--hero .proc{display:none} }
+
 .home .after__body {flex:1;min-width:0}
 .home .after__meta {font-size:12px;color:var(--ink-3);margin-bottom:9px;display:flex;align-items:center;gap:5px;flex-wrap:wrap;white-space:nowrap}
 .home .after__meta .tag {margin:0}
 .home .thumb {flex:0 0 56px;height:56px;border-radius:12px;overflow:hidden;padding:8px 7px;
-  background:linear-gradient(150deg,#232a29,#121716);display:flex;flex-direction:column;gap:3px}
-.home .thumb__k {font-size:5.5px;letter-spacing:.08em;color:#9fb2ff;font-weight:800}
+  background:linear-gradient(150deg,#1f262d,#11161b);display:flex;flex-direction:column;gap:3px}
+.home .thumb__k {font-size:5.5px;letter-spacing:.08em;color:#98b9d6;font-weight:800}
 .home .thumb__d {font-size:9px;color:#fff;font-weight:800;line-height:1}
 .home .thumb__l {height:2.5px;border-radius:2px;background:rgba(255,255,255,.26);margin-top:2px}
 .home .thumb__l--s {width:60%}
@@ -692,7 +711,7 @@ a {
 /* 증거 3장 */
 .home .grid3 {display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:52px}
 .home .card {background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:24px;
-  box-shadow:0 10px 26px rgba(30,36,35,.05);display:flex;flex-direction:column}
+  box-shadow:0 10px 26px rgba(29,35,42,.05);display:flex;flex-direction:column}
 .home .card__k {display:inline-block;font-size:11.5px;font-weight:800;letter-spacing:.04em;color:var(--accent-2);
   background:var(--accent-soft);padding:4px 9px;border-radius:6px;margin-bottom:13px}
 .home .card h3 {font-size:16.5px;font-weight:800;margin-bottom:9px}
@@ -707,12 +726,12 @@ a {
 /* 캡처 OCR */
 .home .ocr {display:grid;grid-template-columns:.85fr 52px 1fr;gap:6px;align-items:center;margin-top:52px}
 .home .poster {border-radius:var(--r);padding:30px;}
-.home .poster {background:linear-gradient(150deg,#232a29,#121716);color:#fff;box-shadow:0 20px 44px rgba(30,36,35,.2)}
+.home .poster {background:linear-gradient(150deg,#232a29,#121716);color:#fff;box-shadow:0 20px 44px rgba(29,35,42,.2)}
 .home .poster .k {font-size:11.5px;letter-spacing:.16em;color:#9fb2ff;font-weight:800}
 .home .poster .t {font-size:34px;font-weight:850;margin:12px 0 18px;line-height:1.1;letter-spacing:-.02em}
 .home .poster .l {font-size:13.5px;color:rgba(255,255,255,.6);line-height:2}
 .home .searchbar {display:flex;align-items:center;gap:9px;margin-top:16px;background:#fff;border:1px solid var(--line);
-  border-radius:12px;padding:11px 14px;font-size:14px;color:var(--ink-2);box-shadow:0 6px 16px rgba(30,36,35,.06)}
+  border-radius:12px;padding:11px 14px;font-size:14px;color:var(--ink-2);box-shadow:0 6px 16px rgba(29,35,42,.06)}
 .home .searchbar .q {font-weight:700;color:var(--ink)}
 
 /* 실제 화면 */
@@ -737,7 +756,7 @@ a {
 .home .chip--src {display:inline-block;font-size:13px;font-weight:700;padding:8px 14px;border-radius:10px;
   background:#fff;border:1px dashed #cfd6d3;color:var(--ink-3)}
 .home .case__arrow {margin:0 0 10px 16px;color:var(--accent);font-size:17px;font-weight:800;line-height:1}
-.home .cases .after {box-shadow:0 12px 30px rgba(30,36,35,.08)}
+.home .cases .after {box-shadow:0 12px 30px rgba(29,35,42,.08)}
 
 /* 쓰는 순서 */
 .home .shot__n {width:30px;height:30px;border-radius:9px;background:var(--brand);color:#fff;
@@ -908,7 +927,7 @@ html[lang="ja"] .home li {
    층은 넷, 간격은 16px 하나. 라벨·부가 문구는 시안에서 제외됐다. */
 .home .demo{display:flex;flex-direction:column;gap:16px;max-width:470px;justify-self:end;width:100%}
 .home .demo .stack{display:flex;flex-direction:column;gap:8px}
-.home .demo .stack .raw{background:rgba(255,255,255,.6);border:1px solid rgba(30,36,35,.08);
+.home .demo .stack .raw{background:rgba(255,255,255,.6);border:1px solid rgba(29,35,42,.08);
   border-radius:14px;padding:13px 15px}
 .home .demo .raw__src{font-size:12px;font-weight:800;color:var(--ink-2);margin-bottom:6px;letter-spacing:-.01em}
 .home .demo .raw__u{font-size:12.5px;color:var(--ink-3);line-height:1.5;
@@ -917,7 +936,7 @@ html[lang="ja"] .home li {
 .home .joint{display:flex;justify-content:center}
 .home .joint span{width:36px;height:36px;border-radius:50%;background:#fff;border:1px solid var(--line);
   display:flex;align-items:center;justify-content:center;color:var(--accent);font-size:17px;font-weight:800;
-  box-shadow:0 6px 16px rgba(30,36,35,.09)}
+  box-shadow:0 6px 16px rgba(29,35,42,.09)}
 .home .demo .after--hero{width:100%}
 .home .demo .afterhint{margin-top:2px;font-size:14px;font-weight:750;color:var(--ink);text-align:center}
 

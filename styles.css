@@ -1,20 +1,20 @@
 :root {
   color-scheme: light;
-  --ink: #252b2a;
-  --muted: #68716d;
-  --line: #e7eae8;
+  --ink: #232930;
+  --muted: #667079;
+  --line: #e4e9ee;
   --paper: #ffffff;
-  --surface: #f3f5f4;
-  --brand: #252b2a;
-  --brand-strong: #171b1a;
-  --accent: #5f7ae5;
-  --accent-text: #3f52b5; /* 본문·링크용. 흰 배경 대비 5.1:1 (AA) */
-  --accent-light: #a8b7ff;
-  --accent-soft: #eef1fc;
+  --surface: #f1f5f8;
+  --brand: #232930;
+  --brand-strong: #161a1e;
+  --accent: #5580a6;
+  --accent-text: #4b7092; /* 본문·링크용. 흰 배경 대비 5.2:1 (AA) */
+  --accent-light: #98b9d6;
+  --accent-soft: #eaf1f6;
   --page-width: 1120px;
   --content-width: 760px;
-  --shadow: 0 24px 64px rgba(37, 43, 42, 0.12);
-  --device: #252b2a;
+  --shadow: 0 24px 64px rgba(35, 41, 48, 0.12);
+  --device: #232930;
 }
 
 * {
@@ -612,9 +612,9 @@ a {
 
 /* ===== 홈 전용 (main.home 안에서만 적용) ===== */
 .home {
-  --ink: #1e2423; --ink-2: #5b6663; --ink-3: #8d9793;
-  --line: #e7ebe9; --paper: #fff; --soft: #f4f7f6;
-  --brand: #1e2423; --accent: #5f7ae5; --accent-2: #3f52b5; --accent-soft: #eef1fc;
+  --ink: #1d232a; --ink-2: #5b6672; --ink-3: #8a949e;
+  --line: #e4e9ee; --paper: #fff; --soft: #f2f6f9;
+  --brand: #1d232a; --accent: #5580a6; --accent-2: #4b7092; --accent-soft: #eaf1f6;
   --r: 18px;
   color: var(--ink);
   line-height: 1.5;
@@ -651,7 +651,7 @@ a {
 
 /* 첫 화면 */
 .home .hero {position:relative;overflow:hidden;padding:96px 0 110px;
-  background:radial-gradient(1100px 460px at 78% 18%, #eef1fc 0%, transparent 62%), linear-gradient(170deg,#fcfdfd,#f4f7f6)}
+  background:radial-gradient(1100px 460px at 78% 18%, #eaf1f6 0%, transparent 62%), linear-gradient(170deg,#fcfdfe,#f2f6f9)}
 .home .hero__grid {display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:center}
 .home .cta {display:inline-flex;align-items:center;gap:9px;margin-top:32px;padding:16px 28px;border-radius:15px;
   background:var(--brand);color:#fff;font-size:16.5px;font-weight:700;text-decoration:none;
@@ -725,8 +725,8 @@ a {
   .home .shot .frame {margin-top:auto}
 }
 .home .shot {text-align:center}
-.home .shot .frame {border-radius:26px;padding:7px;background:linear-gradient(150deg,#3d4643,#171b1a);
-  box-shadow:0 24px 50px rgba(30,36,35,.22)}
+.home .shot .frame {border-radius:26px;padding:7px;background:linear-gradient(150deg,#3b444d,#161a1e);
+  box-shadow:0 24px 50px rgba(29,35,42,.22)}
 .home .shot .frame img {display:block;width:100%;border-radius:20px}
 .home .shot p {margin-top:16px;font-size:14px;color:var(--ink-2)}
 .home .shot strong {display:block;font-size:15px;color:var(--ink);margin-bottom:4px}

@@ -123,6 +123,8 @@ a {
   width: 34px;
   height: 34px;
   border-radius: 8px;
+  /* 새 로고(B)는 거의 흰 타일이라 흰 머리말에서 윤곽이 사라진다 — 옅은 윤곽선으로 모양만 잡아 준다 */
+  box-shadow: 0 0 0 1px rgba(35, 41, 48, .09);
 }
 
 .site-header__actions {

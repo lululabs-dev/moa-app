@@ -7,8 +7,8 @@
   --surface: #f1f5f8;
   --brand: #232930;
   --brand-strong: #161a1e;
-  --accent: #5580a6;
-  --accent-text: #4b7092; /* 본문·링크용. 흰 배경 대비 5.2:1 (AA) */
+  --accent: #456784;
+  --accent-text: #3f6381; /* 본문·링크용. 앱 accent-2와 같음, 흰 배경 대비 6.3:1 */
   --accent-light: #98b9d6;
   --accent-soft: #eaf1f6;
   --page-width: 1120px;
@@ -346,7 +346,7 @@ a {
 
 .document p,
 .document li {
-  color: #4c5552;
+  color: #4c5560;
 }
 
 .document ul,
@@ -381,7 +381,7 @@ a {
   margin-top: 42px;
   padding: 26px;
   background: var(--accent-soft);
-  border: 1px solid #dce2fa;
+  border: 1px solid #d6e3ed;
   border-radius: 8px;
 }
 
@@ -419,7 +419,7 @@ a {
 .site-footer {
   padding: 34px 0 40px;
   color: var(--muted);
-  background: #f7f8f8;
+  background: #f7f9fa;
   border-top: 1px solid var(--line);
 }
 
@@ -451,7 +451,7 @@ a {
 .business-disclosure__details span:not(:last-child)::after {
   position: absolute;
   right: -8px;
-  color: #aab4b0;
+  color: #a9b3bb;
   content: "·";
 }
 
@@ -612,9 +612,9 @@ a {
 
 /* ===== 홈 전용 (main.home 안에서만 적용) ===== */
 .home {
-  --ink: #1d232a; --ink-2: #5b6672; --ink-3: #8a949e;
+  --ink: #1d232a; --ink-2: #5b6672; --ink-3: #626d77;
   --line: #e4e9ee; --paper: #fff; --soft: #f2f6f9;
-  --brand: #1d232a; --accent: #5580a6; --accent-2: #4b7092; --accent-soft: #eaf1f6;
+  --brand: #1d232a; --accent: #456784; --accent-2: #3f6381; --accent-soft: #eaf1f6;
   --r: 18px;
   color: var(--ink);
   line-height: 1.5;
@@ -639,10 +639,10 @@ a {
 /* 헤더 *//* 공통 */
 .home .sec {padding:120px 0}
 .home .sec--soft {background:var(--soft)}
-.home .sec--dark {background:linear-gradient(160deg,#242b2a,#171c1b);color:#fff}
+.home .sec--dark {background:linear-gradient(160deg,#232a31,#161b20);color:#fff}
 .home .eyebrow {display:inline-block;font-size:13.5px;font-weight:700;letter-spacing:.02em;
   padding:7px 14px;border-radius:999px;background:var(--accent-soft);color:var(--accent-2);margin-bottom:22px}
-.home .sec--dark .eyebrow {background:rgba(159,178,255,.16);color:#b3c2ff}
+.home .sec--dark .eyebrow {background:rgba(152,185,214,.16);color:#b8d0e4}
 .home h1 {font-size:clamp(28px, 3.9vw, 54px);font-weight:820;line-height:1.1;letter-spacing:-.03em}
 .home h2 {font-size:40px;font-weight:800;line-height:1.2;letter-spacing:-.025em}
 .home .lede {margin-top:20px;font-size:19px;line-height:1.72;color:var(--ink-2);max-width:34em}
@@ -659,7 +659,7 @@ a {
 .home .req {margin-top:13px;font-size:13px;color:var(--ink-3)}
 .home .raw__u {font-size:12.5px;color:var(--ink-3);word-break:break-all;line-height:1.5}
 .home .raw__u {overflow-wrap:anywhere}
-.home .raw__n {margin-top:7px;font-size:12px;color:#b3bbb8}
+.home .raw__n {margin-top:7px;font-size:12px;color:#b3bcc4}
 .home .after {background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:20px;
   box-shadow:0 20px 44px rgba(29,35,42,.1)}
 .home .tags {display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
@@ -675,9 +675,9 @@ a {
 
 /* 결과 카드(첫 화면) — 실제 앱 카드 형태 */
 .home .after--hero {position:relative;padding:22px;border-radius:20px;
-  box-shadow:0 26px 60px rgba(63,82,181,.16), 0 2px 6px rgba(29,35,42,.05)}
+  box-shadow:0 26px 60px rgba(52,86,118,.16), 0 2px 6px rgba(29,35,42,.05)}
 .home .after--hero::before {content:"";position:absolute;inset:-14px;z-index:-1;border-radius:30px;
-  background:radial-gradient(60% 70% at 50% 40%, rgba(95,122,229,.16), transparent 72%)}
+  background:radial-gradient(60% 70% at 50% 40%, rgba(69,103,132,.16), transparent 72%)}
 .home .after__row {display:flex;gap:14px;align-items:flex-start}
 /* 첫 화면 카드: 앱과 같은 순간을 보여준다 — '정리하고 있어요' 상태에서 썸네일 자리에 종이가 쌓이고,
    다 쌓이면 완성된 카드가 드러난다. 한 바퀴 7.2초. 앱 아이콘(B)이 이 장면의 마지막 모양이다. */
@@ -726,8 +726,8 @@ a {
 /* 캡처 OCR */
 .home .ocr {display:grid;grid-template-columns:.85fr 52px 1fr;gap:6px;align-items:center;margin-top:52px}
 .home .poster {border-radius:var(--r);padding:30px;}
-.home .poster {background:linear-gradient(150deg,#232a29,#121716);color:#fff;box-shadow:0 20px 44px rgba(29,35,42,.2)}
-.home .poster .k {font-size:11.5px;letter-spacing:.16em;color:#9fb2ff;font-weight:800}
+.home .poster {background:linear-gradient(150deg,#1f262d,#11161b);color:#fff;box-shadow:0 20px 44px rgba(29,35,42,.2)}
+.home .poster .k {font-size:11.5px;letter-spacing:.16em;color:#98b9d6;font-weight:800}
 .home .poster .t {font-size:34px;font-weight:850;margin:12px 0 18px;line-height:1.1;letter-spacing:-.02em}
 .home .poster .l {font-size:13.5px;color:rgba(255,255,255,.6);line-height:2}
 .home .searchbar {display:flex;align-items:center;gap:9px;margin-top:16px;background:#fff;border:1px solid var(--line);
@@ -754,7 +754,7 @@ a {
 .home .cases {display:grid;grid-template-columns:repeat(2,1fr);gap:28px;margin-top:48px}
 .home .case__from {margin-bottom:10px}
 .home .chip--src {display:inline-block;font-size:13px;font-weight:700;padding:8px 14px;border-radius:10px;
-  background:#fff;border:1px dashed #cfd6d3;color:var(--ink-3)}
+  background:#fff;border:1px dashed #cfd8df;color:var(--ink-3)}
 .home .case__arrow {margin:0 0 10px 16px;color:var(--accent);font-size:17px;font-weight:800;line-height:1}
 .home .cases .after {box-shadow:0 12px 30px rgba(29,35,42,.08)}
 
@@ -774,7 +774,7 @@ a {
 /* 요금 */
 .home .plans {display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:48px}
 .home .plan {border:1px solid var(--line);border-radius:22px;padding:32px;background:#fff}
-.home .plan--pro {border:1.5px solid var(--accent);box-shadow:0 20px 44px rgba(95,122,229,.16);position:relative}
+.home .plan--pro {border:1.5px solid var(--accent);box-shadow:0 20px 44px rgba(69,103,132,.16);position:relative}
 .home .plan--pro::after {content:"추천";position:absolute;top:-11px;right:26px;background:var(--accent);color:#fff;
   font-size:12px;font-weight:800;padding:5px 12px;border-radius:999px}
 .home .plan__k {font-size:12.5px;font-weight:800;color:var(--accent-2);letter-spacing:.03em}
@@ -932,7 +932,7 @@ html[lang="ja"] .home li {
 .home .demo .raw__src{font-size:12px;font-weight:800;color:var(--ink-2);margin-bottom:6px;letter-spacing:-.01em}
 .home .demo .raw__u{font-size:12.5px;color:var(--ink-3);line-height:1.5;
   white-space:nowrap;overflow:hidden;text-overflow:ellipsis;overflow-wrap:normal}
-.home .demo .raw__n{margin-top:7px;font-size:12px;color:#b3bbb8}
+.home .demo .raw__n{margin-top:7px;font-size:12px;color:#b3bcc4}
 .home .joint{display:flex;justify-content:center}
 .home .joint span{width:36px;height:36px;border-radius:50%;background:#fff;border:1px solid var(--line);
   display:flex;align-items:center;justify-content:center;color:var(--accent);font-size:17px;font-weight:800;

@@ -687,14 +687,14 @@ a {
 .home .after--hero .proc h4{color:var(--ink-2);font-weight:700}
 .home .after--hero .proc p{color:var(--ink-3)}
 .home .thumb.thumb--proc{background:#f2f6f9;display:grid;place-items:center;padding:0}
-.home .thumb.thumb--proc .pile{position:relative;width:62%;aspect-ratio:1/.62}
+.home .thumb.thumb--proc .pile{position:relative;width:66%;aspect-ratio:1/.86}
 .home .thumb.thumb--proc .ps{position:absolute;left:50%;border-radius:18%/28%}
-.home .thumb.thumb--proc .ps1{width:86%;height:48%;top:0;background:#bcd6e9;opacity:.38;transform:translate(-50%,0) rotate(-5deg);animation:moaP1 7.2s cubic-bezier(.2,.85,.3,1) infinite}
-.home .thumb.thumb--proc .ps2{width:92%;height:50%;top:22%;background:#9fc2de;opacity:.62;transform:translate(-50%,0) rotate(2deg);animation:moaP2 7.2s cubic-bezier(.2,.85,.3,1) infinite}
-.home .thumb.thumb--proc .ps3{width:100%;height:56%;top:44%;background:linear-gradient(180deg,#8db6d8,#5f8fbd);transform:translate(-50%,0);animation:moaP3 7.2s cubic-bezier(.2,.85,.3,1) infinite}
+.home .thumb.thumb--proc .ps1{width:82%;height:36%;top:0;background:#bcd6e9;opacity:.55;transform:translate(-50%,0) rotate(-5deg);animation:moaP1 7.2s cubic-bezier(.2,.85,.3,1) infinite}
+.home .thumb.thumb--proc .ps2{width:91%;height:38%;top:25%;background:#9fc2de;opacity:.8;transform:translate(-50%,0) rotate(2deg);animation:moaP2 7.2s cubic-bezier(.2,.85,.3,1) infinite}
+.home .thumb.thumb--proc .ps3{width:100%;height:42%;top:54%;background:linear-gradient(180deg,#8db6d8,#5f8fbd);transform:translate(-50%,0);animation:moaP3 7.2s cubic-bezier(.2,.85,.3,1) infinite}
 @keyframes moaProc{0%,44%{opacity:1}52%,92%{opacity:0}98%,100%{opacity:1}}
-@keyframes moaP1{0%{transform:translate(-50%,-70%) rotate(-14deg);opacity:0}14%,90%{transform:translate(-50%,0) rotate(-5deg);opacity:.38}100%{transform:translate(-50%,-70%) rotate(-14deg);opacity:0}}
-@keyframes moaP2{0%,5%{transform:translate(-50%,-70%) rotate(8deg);opacity:0}19%,90%{transform:translate(-50%,0) rotate(2deg);opacity:.62}100%{transform:translate(-50%,-70%) rotate(8deg);opacity:0}}
+@keyframes moaP1{0%{transform:translate(-50%,-70%) rotate(-14deg);opacity:0}14%,90%{transform:translate(-50%,0) rotate(-5deg);opacity:.55}100%{transform:translate(-50%,-70%) rotate(-14deg);opacity:0}}
+@keyframes moaP2{0%,5%{transform:translate(-50%,-70%) rotate(8deg);opacity:0}19%,90%{transform:translate(-50%,0) rotate(2deg);opacity:.8}100%{transform:translate(-50%,-70%) rotate(8deg);opacity:0}}
 @keyframes moaP3{0%,10%{transform:translate(-50%,-70%);opacity:0}24%,90%{transform:translate(-50%,0);opacity:1}100%{transform:translate(-50%,-70%);opacity:0}}
 @media (prefers-reduced-motion: reduce){ .home .after--hero .proc{display:none} }
 

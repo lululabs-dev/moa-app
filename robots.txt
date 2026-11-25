@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://lululabs-dev.github.io/moa-app/sitemap.xml
+Sitemap: https://moa.lululabs.ai/sitemap.xml

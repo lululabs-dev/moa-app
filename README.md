@@ -2,6 +2,8 @@
 
 모아 iOS 앱의 소개, 지원, 개인정보 처리방침과 이용약관을 제공하는 정적 GitHub Pages 사이트입니다.
 
+주소는 `https://moa.lululabs.ai/`입니다. 루트의 `CNAME` 파일이 GitHub Pages에 이 주소를 알려 주므로 지우지 않습니다.
+
 ## 경로
 
 - `/`: 앱 소개

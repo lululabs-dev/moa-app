@@ -1,87 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://lululabs-dev.github.io/moa-app/</loc>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://lululabs-dev.github.io/moa-app/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://lululabs-dev.github.io/moa-app/en/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://lululabs-dev.github.io/moa-app/ja/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://lululabs-dev.github.io/moa-app/"/>
+    <loc>https://moa.lululabs.ai/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://moa.lululabs.ai/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moa.lululabs.ai/en/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://moa.lululabs.ai/ja/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://moa.lululabs.ai/"/>
   </url>
   <url>
-    <loc>https://lululabs-dev.github.io/moa-app/en/</loc>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://lululabs-dev.github.io/moa-app/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://lululabs-dev.github.io/moa-app/en/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://lululabs-dev.github.io/moa-app/ja/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://lululabs-dev.github.io/moa-app/"/>
+    <loc>https://moa.lululabs.ai/en/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://moa.lululabs.ai/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moa.lululabs.ai/en/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://moa.lululabs.ai/ja/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://moa.lululabs.ai/"/>
   </url>
   <url>
-    <loc>https://lululabs-dev.github.io/moa-app/ja/</loc>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://lululabs-dev.github.io/moa-app/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://lululabs-dev.github.io/moa-app/en/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://lululabs-dev.github.io/moa-app/ja/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://lululabs-dev.github.io/moa-app/"/>
+    <loc>https://moa.lululabs.ai/ja/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://moa.lululabs.ai/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moa.lululabs.ai/en/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://moa.lululabs.ai/ja/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://moa.lululabs.ai/"/>
   </url>
   <url>
-    <loc>https://lululabs-dev.github.io/moa-app/privacy/</loc>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://lululabs-dev.github.io/moa-app/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://lululabs-dev.github.io/moa-app/en/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://lululabs-dev.github.io/moa-app/ja/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://lululabs-dev.github.io/moa-app/privacy/"/>
+    <loc>https://moa.lululabs.ai/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://moa.lululabs.ai/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moa.lululabs.ai/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://moa.lululabs.ai/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://moa.lululabs.ai/privacy/"/>
   </url>
   <url>
-    <loc>https://lululabs-dev.github.io/moa-app/en/privacy/</loc>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://lululabs-dev.github.io/moa-app/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://lululabs-dev.github.io/moa-app/en/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://lululabs-dev.github.io/moa-app/ja/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://lululabs-dev.github.io/moa-app/privacy/"/>
+    <loc>https://moa.lululabs.ai/en/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://moa.lululabs.ai/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moa.lululabs.ai/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://moa.lululabs.ai/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://moa.lululabs.ai/privacy/"/>
   </url>
   <url>
-    <loc>https://lululabs-dev.github.io/moa-app/ja/privacy/</loc>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://lululabs-dev.github.io/moa-app/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://lululabs-dev.github.io/moa-app/en/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://lululabs-dev.github.io/moa-app/ja/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://lululabs-dev.github.io/moa-app/privacy/"/>
+    <loc>https://moa.lululabs.ai/ja/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://moa.lululabs.ai/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moa.lululabs.ai/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://moa.lululabs.ai/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://moa.lululabs.ai/privacy/"/>
   </url>
   <url>
-    <loc>https://lululabs-dev.github.io/moa-app/terms/</loc>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://lululabs-dev.github.io/moa-app/terms/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://lululabs-dev.github.io/moa-app/en/terms/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://lululabs-dev.github.io/moa-app/ja/terms/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://lululabs-dev.github.io/moa-app/terms/"/>
+    <loc>https://moa.lululabs.ai/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://moa.lululabs.ai/terms/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moa.lululabs.ai/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://moa.lululabs.ai/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://moa.lululabs.ai/terms/"/>
   </url>
   <url>
-    <loc>https://lululabs-dev.github.io/moa-app/en/terms/</loc>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://lululabs-dev.github.io/moa-app/terms/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://lululabs-dev.github.io/moa-app/en/terms/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://lululabs-dev.github.io/moa-app/ja/terms/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://lululabs-dev.github.io/moa-app/terms/"/>
+    <loc>https://moa.lululabs.ai/en/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://moa.lululabs.ai/terms/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moa.lululabs.ai/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://moa.lululabs.ai/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://moa.lululabs.ai/terms/"/>
   </url>
   <url>
-    <loc>https://lululabs-dev.github.io/moa-app/ja/terms/</loc>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://lululabs-dev.github.io/moa-app/terms/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://lululabs-dev.github.io/moa-app/en/terms/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://lululabs-dev.github.io/moa-app/ja/terms/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://lululabs-dev.github.io/moa-app/terms/"/>
+    <loc>https://moa.lululabs.ai/ja/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://moa.lululabs.ai/terms/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moa.lululabs.ai/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://moa.lululabs.ai/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://moa.lululabs.ai/terms/"/>
   </url>
   <url>
-    <loc>https://lululabs-dev.github.io/moa-app/support/</loc>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://lululabs-dev.github.io/moa-app/support/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://lululabs-dev.github.io/moa-app/en/support/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://lululabs-dev.github.io/moa-app/ja/support/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://lululabs-dev.github.io/moa-app/support/"/>
+    <loc>https://moa.lululabs.ai/support/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://moa.lululabs.ai/support/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moa.lululabs.ai/en/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://moa.lululabs.ai/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://moa.lululabs.ai/support/"/>
   </url>
   <url>
-    <loc>https://lululabs-dev.github.io/moa-app/en/support/</loc>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://lululabs-dev.github.io/moa-app/support/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://lululabs-dev.github.io/moa-app/en/support/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://lululabs-dev.github.io/moa-app/ja/support/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://lululabs-dev.github.io/moa-app/support/"/>
+    <loc>https://moa.lululabs.ai/en/support/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://moa.lululabs.ai/support/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moa.lululabs.ai/en/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://moa.lululabs.ai/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://moa.lululabs.ai/support/"/>
   </url>
   <url>
-    <loc>https://lululabs-dev.github.io/moa-app/ja/support/</loc>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://lululabs-dev.github.io/moa-app/support/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://lululabs-dev.github.io/moa-app/en/support/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://lululabs-dev.github.io/moa-app/ja/support/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://lululabs-dev.github.io/moa-app/support/"/>
+    <loc>https://moa.lululabs.ai/ja/support/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://moa.lululabs.ai/support/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moa.lululabs.ai/en/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://moa.lululabs.ai/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://moa.lululabs.ai/support/"/>
   </url>
 </urlset>
